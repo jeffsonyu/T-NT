@@ -1,4 +1,3 @@
-import random
 import base64
 from torch.utils.tensorboard import SummaryWriter
 import os
@@ -26,7 +25,6 @@ from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.results_plotter import load_results, ts2xy, plot_results
 from stable_baselines3.common.callbacks import BaseCallback, CheckpointCallback
 from stable_baselines3.common import results_plotter
-import matplotlib.pyplot as plt
 
 
 center_pos_x = 0
@@ -79,9 +77,6 @@ env_unity.asset_channel.SendMessage('Reset', 0., 0.)
 for _ in range(200):
     env_unity.step()
     
-
-# while True:
-#     env.step()
 
 class TacIEnv(gym.Env):
     def __init__(self, env_unity):
@@ -212,7 +207,7 @@ def make_env(rank, seed=0):
     def _init():
         env = TacIEnv(env_unity=env_unity)
         env.seed(seed + rank)
-        # check_env(env)
+
         return env
     set_random_seed(seed)
     return _init
