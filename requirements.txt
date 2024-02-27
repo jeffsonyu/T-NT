@@ -1,0 +1,8 @@
+numpy
+scipy
+stable_baselines3
+matplotlib
+opencv-python
+Pillow
+uvicorn
+fastapi
