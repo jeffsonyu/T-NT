@@ -1,5 +1,5 @@
 # Precise Robotic Needle-Threading with Tactile Perception and Reinforcement Learning  
-[**Paper**]() | [**Project Page**](https://sites.google.com/view/tac-needlethreading) <br>
+[**Paper**](https://proceedings.mlr.press/v229/yu23c.html) | [**Project Page**](https://sites.google.com/view/tac-needlethreading) <br>
 
 <div style="text-align: center">
 <img src="media/setup.png" width="1000"/>
